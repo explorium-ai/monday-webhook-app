@@ -9,6 +9,10 @@ nameOverride: ""
 fullnameOverride: ""
 
 server:
+  image:
+    repository: myrepo/monday-trigger
+    tag: latest
+    pullPolicy: Always
   replicaCount: 1
   service:
     type: ClusterIP
