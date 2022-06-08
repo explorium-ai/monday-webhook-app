@@ -1,0 +1,32 @@
+# Default values for socrates.
+# This is a YAML-formatted file.
+# Declare variables to be passed into your templates.
+
+webhookUrl: monday-webhook.com
+
+imagePullSecrets: []
+nameOverride: ""
+fullnameOverride: ""
+
+server:
+  replicaCount: 1
+  service:
+    type: ClusterIP
+    port: 4000
+    annotations: {}
+  annotations: {}    
+  nodeSelector: {}
+  tolerations: []
+  affinity: {}
+  resources: {}
+
+ingress:
+  enabled: false
+  annotations: {}
+  path: /
+  hosts:
+    - monday-webhook.my.domain
+  tls: []
+  #  - secretName: chart-example-tls
+  #    hosts:
+  #      - chart-example.local
