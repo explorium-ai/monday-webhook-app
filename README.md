@@ -21,7 +21,6 @@ _To Run on Kubernetes:_
 ```
 curl -X POST http://my-webhook-app/webhook -H "Content-Type: application/json" -d '{"data": "test"}'
 ```
-
 ## monday.com
 
 Configure a webhook for your board using the guide [here](https://support.monday.com/hc/en-us/articles/360003540679-Webhook-Integration-).
